@@ -21,6 +21,7 @@ def start(config):
 
     for d in dialogs:
         channel_id = getattr(d.entity, 'id', None)
+        print(f"Dialog: Name={d.name}, ID={channel_id},  Type={type(d.entity)}") # Debug print
         # Check if input_channel_names exists before trying to access it
         use_name = "input_channel_names" in config and d.name in config["input_channel_names"]
         use_id = "input_channel_ids" in config and channel_id in config["input_channel_ids"]
@@ -30,13 +31,13 @@ def start(config):
                 input_channels_entities.append(InputChannel(d.entity.id, d.entity.access_hash))
             except AttributeError:
                 logger.warning(f"Could not get access_hash for channel: {d.name} (ID: {channel_id}). Skipping.")
-                continue # Skip the problematic channel
-        if d.name in config["output_channel_names"] or (channel_id and channel_id in config["output_channel_ids"]): # Fixed this line
+                continue  # Skip the problematic channel
+        if d.name in config["output_channel_names"] or (channel_id and channel_id in config["output_channel_ids"]):  # Fixed this line
             try:
                 output_channel_entities.append(InputChannel(d.entity.id, d.entity.access_hash))
             except AttributeError:
                 logger.warning(f"Could not get access_hash for output channel: {d.name} (ID: {channel_id}). Skipping.")
-                continue # Skip the problematic channel
+                continue  # Skip the problematic channel
 
     if not output_channel_entities:
         logger.error(f"Could not find any output channels in the user's dialogs")
