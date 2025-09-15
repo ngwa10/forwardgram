@@ -1,0 +1,12 @@
+api_id: 29630724
+api_hash: '8e12421a95fd722246e0c0b194fd3e0c'
+session_name: 'forwardgram'
+
+input_channel_ids:
+  - -1001621425154  # Notorious Silva Signals
+
+output_channel_names:
+  - 'Receiver'
+
+output_channel_ids:
+  - -1003033183667
