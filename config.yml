@@ -1,0 +1,49 @@
+api_id: 29630724
+
+api_hash: '8e12421a95fd722246e0c0b194fd3e0c'
+
+session_name: 'forwardgram'
+
+
+
+input_channel_names:
+
+  - 'Notorious Silva Signals'
+
+  - 'ANNA TRADER - WITHOUT MARTINGALE'
+
+  - 'Source two'
+
+  - 'Igor Trader TM'
+
+  - 'GAB TRADER - FREE OPERATIONS'
+
+  - 'Lorenzo'
+
+
+
+output_channel_names:
+
+  - 'Receiving Channel'
+
+
+
+input_channel_ids:
+
+  - -1001621425154
+
+  - -1002197451859
+
+  - -1002944619696
+
+  - -1002054781860
+
+  - -1002052418759
+
+  - -1002074799242
+
+
+
+output_channel_ids:
+
+  - -1003033183667
