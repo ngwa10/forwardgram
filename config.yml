@@ -14,12 +14,12 @@ output_channel_names:
   - 'Receiver'
 
 input_channel_ids:
-  - -1001621425154
-  - -1002197451859
-  - -1002944619696
-  - -1002054781860
-  - -1002052418759
-  - -1002074799242
+  - 1621425154  # Notorious Silva Signals
+  - 2197451859  # ANNA TRADER - WITHOUT MARTINGALE
+  - 2944619696  # Source two
+  - 2054781860  # Igor Trader TM
+  - 2052418759  # GAB TRADER - FREE OPERATIONS
+  - 2074799242  # Lorenzo
 
 output_channel_ids:
-  - -1003033183667
+  - 3033183667
