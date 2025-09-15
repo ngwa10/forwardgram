@@ -11,7 +11,7 @@ input_channel_names:
   - 'Lorenzo'
 
 output_channel_names:
-  - 'Receiving Channel'
+  - 'Receiver'  # Changed to 'Receiver'
 
 input_channel_ids:
   - -1001621425154
